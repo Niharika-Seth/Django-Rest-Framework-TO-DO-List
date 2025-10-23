@@ -20,4 +20,5 @@ from django.urls import include, path
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("apis/v1/", include("apis.urls")),  # new (V1 stands for version 1)
+    path('auth/', include("auth_app.urls")),  
 ]
