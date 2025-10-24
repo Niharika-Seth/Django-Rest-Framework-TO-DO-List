@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'apis',  # new
     'todos',  # new
     'auth_app',
+    'django_extensions',
+    ]
 
-]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -138,8 +139,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8001",  # or wherever your frontend runs
     "http://127.0.0.1:8001",
 ]
+
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8001",
     "http://127.0.0.1:8001",
 ]
+
 CORS_ALLOW_CREDENTIALS = True
